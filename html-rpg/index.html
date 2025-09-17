@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ленинградский Рогалик</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Ленинградский Рогалик: Возвращение Ленин-гриба</h1>
+      <p class="subtitle">Пошаговая RPG про альтернативный Петербург 2025 года.</p>
+    </header>
+
+    <main class="layout">
+      <section class="panel map-panel">
+        <h2>Карта зон</h2>
+        <p class="hint">Кликай по соседним локациям, чтобы перемещаться. Бой запускается автоматически.</p>
+        <div id="map" class="map"></div>
+      </section>
+
+      <section class="panel status-panel">
+        <h2>Персонаж</h2>
+        <div id="stats" class="stats"></div>
+        <div id="status-effects" class="status-effects"></div>
+        <div class="progress">
+          <label>Опыт</label>
+          <div class="bar">
+            <div id="xp-bar" class="fill"></div>
+          </div>
+        </div>
+        <div class="progress">
+          <label>Остаток рейда</label>
+          <div class="bar">
+            <div id="run-bar" class="fill"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel actions-panel">
+        <h2>Действия</h2>
+        <div id="actions"></div>
+        <div id="battle"></div>
+      </section>
+
+      <section class="panel inventory-panel">
+        <h2>Инвентарь</h2>
+        <div id="inventory"></div>
+      </section>
+
+      <section class="panel skills-panel">
+        <h2>Скиллы</h2>
+        <div id="skills"></div>
+      </section>
+
+      <section class="panel log-panel">
+        <h2>Журнал</h2>
+        <div id="log" class="log"></div>
+      </section>
+
+      <section class="panel dialogue-panel">
+        <h2>Диалоги</h2>
+        <div id="dialogue" class="dialogue"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Сделано с заботой о кроссбраузерности: чистый HTML, CSS и JavaScript.</p>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
